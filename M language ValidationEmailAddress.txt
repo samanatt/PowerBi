@@ -1,0 +1,10 @@
+
+let
+    ValidateEmail = (email as text) as logical =>
+    let
+        // Define a custom condition for validating email addresses
+        condition = Text.Contains(email, "@") and Text.Contains(email, ".") and Text.Length(email) > 5
+    in
+        condition
+in
+    ValidateEmail

@@ -1,0 +1,12 @@
+let
+    MakeGenderDescription = (input as text) => 
+    let 
+        CompleteGender = if input = "M" then "Male"
+                            else if input = "F" then "Female"
+                            else "N/A"
+
+    in  
+        CompleteGender
+
+in
+    MakeGenderDescription

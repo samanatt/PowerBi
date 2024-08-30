@@ -1,0 +1,9 @@
+let
+    MakeFullName = (input1 as text, input2 as text) => 
+    let 
+        #"Full Name" = input1 & " " & input2
+
+    in 
+        #"Full Name"
+in
+    MakeFullName

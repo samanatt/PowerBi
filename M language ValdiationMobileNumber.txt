@@ -1,0 +1,14 @@
+let
+    MobileNumberValidation = (input as text ) => 
+    let 
+        Mobilelenght = if Text.Length(input) < 11  then 11 - Text.Length(input)
+                        else if Text.Length(input) > 11 then "N/A"
+                        else 0,
+        result = if Mobilelenght <> 0 or Mobilelenght <> "N/A" then Text.Repeat("0",Mobilelenght) & input
+                else input
+
+                    
+    in
+        result
+in
+    MobileNumberValidation
