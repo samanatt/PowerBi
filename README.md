@@ -96,3 +96,7 @@ Step 13: Creating the Dashboard
 
 Conclusion
 This repository serves as a comprehensive guide for building a data warehouse from the AdventureWorks2019 database using a snowflake schema. By following these steps, users can effectively analyze sales data and gain valuable insights into their business operations. Feel free to copy and paste this content into your GitHub repository's README file. This structured documentation will help others understand the purpose and process of your project, including the use of M language for data validation, DAX for calculations, and the creation of a dashboard in Power BI. If you need any further modifications or additional sections, let me know!
+
+![Pic of Modeling(snowFlake)](https://github.com/user-attachments/assets/c3a20a39-354b-4bbf-89f1-ae50625faa20)
+
+
