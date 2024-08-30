@@ -1,3 +1,4 @@
+![Pic of Modeling(snowFlake)](https://github.com/user-attachments/assets/c3a20a39-354b-4bbf-89f1-ae50625faa20)
 This repository contains the implementation of a data warehouse built from the AdventureWorks2019 database, utilizing a snowflake schema. The project includes data extraction, transformation, and loading (ETL), data validation using M language, and reporting and dashboard creation using DAX in Power BI.
 Table of Contents
 
@@ -95,6 +96,6 @@ Step 13: Creating the Dashboard
 
 Conclusion
 This repository serves as a comprehensive guide for building a data warehouse from the AdventureWorks2019 database using a snowflake schema. By following these steps, users can effectively analyze sales data and gain valuable insights into their business operations. 
-![Pic of Modeling(snowFlake)](https://github.com/user-attachments/assets/c3a20a39-354b-4bbf-89f1-ae50625faa20)
+
 
 
