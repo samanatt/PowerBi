@@ -1,0 +1,19 @@
+﻿DEFINE 
+---- MODEL MEASURES BEGIN ----
+MEASURE 'Finance Measure'[CountofRecord] = COUNTROWS(FactInternetSales)
+MEASURE 'Finance Measure'[CountRowsWithoutGap] = COUNTROWS(ALL(FactInternetSales))
+MEASURE 'Finance Measure'[IfSelectedColorValue] = IF(NOT(ISFILTERED(DimProduct[Color])),"ALL SELECTED")
+MEASURE 'Finance Measure'[NewTotalAmount] = sum(FactInternetSales[UnitPrice])
+MEASURE 'Finance Measure'[SelectedColorValue] = SELECTEDVALUE(DimProduct[Color]) 
+MEASURE 'Finance Measure'[TotalSales] = SUMX(FactInternetSales,FactInternetSales[UnitPrice] * FactInternetSales[OrderQuantity])
+MEASURE 'Finance Measure'[TotalSalesofRedProduct] = SUMX(FILTER(FactInternetSales,RELATED(DimProduct[Color])="Red"),FactInternetSales[UnitPrice] * FactInternetSales[OrderQuantity])
+MEASURE 'Finance Measure'[ToTalSumofOrder] = SUMX(FactInternetSales, FactInternetSales[UnitPrice] * FactInternetSales[OrderQuantity])
+MEASURE 'Finance Measure'[UserSelectedValue] = SELECTEDVALUE(DimProductCategory[ProductCategoryName],"N/A")
+
+MEASURE 'Finance Measure'[TotalSales with If] = SUMX(FactInternetSales,IF(RELATED(DimProduct[Color])="Red",FactInternetSales[SalesAmount],0))
+MEASURE 'Finance Measure'[TotalSalesWith Calculate] = CALCULATE(SUMX(FactInternetSales,FactInternetSales[SalesAmount]),DimProduct[Color]="Red")
+MEASURE 'Finance Measure'[Total Sales with filter] = SUMX(FILTER(FactInternetSales,RELATED(DimProduct[Color])="Red"),FactInternetSales[SalesAmount])
+---- MODEL MEASURES END ----
+
+
+
