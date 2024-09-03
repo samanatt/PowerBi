@@ -1,3 +1,5 @@
+https://drive.google.com/file/d/1NDrSolCySguc3T6XUpFS8k8nehuOhrT6/view?usp=drive_link                           فیلم توضیحات پروژه
+
 ![Pic of Modeling(snowFlake)](https://github.com/user-attachments/assets/c3a20a39-354b-4bbf-89f1-ae50625faa20)
 This repository contains the implementation of a data warehouse built from the AdventureWorks2019 database, utilizing a snowflake schema. The project includes data extraction, transformation, and loading (ETL), data validation using M language, and reporting and dashboard creation using DAX in Power BI.
 Table of Contents
